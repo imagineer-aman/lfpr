@@ -59,7 +59,7 @@ UserVoice.push(['showTab', 'classic_widget', {
   <div class="container">
     <?php
     if(user_logged_in()) { ?>
-    <div class="row">
+    <div class="row-fluid">
       <div class="top-nav">
         <span class="app-name">
         <!--  Looking For Pull Requests-->
@@ -97,7 +97,7 @@ UserVoice.push(['showTab', 'classic_widget', {
     <?php
     }
     ?>
-    <div class="row">
+    <div class="row-fluid">
       <?= $this->renderView(); ?>
     </div>
     </div>

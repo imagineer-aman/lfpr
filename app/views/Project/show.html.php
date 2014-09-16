@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row-fluid">
 	<div class="page-header">
 		<h1>
 			Stats for project: <small><?=$this->project->name?></small>
@@ -73,22 +73,25 @@
             </div>
             <div class="clearfix"></div>
         </div>
-    	<div class="span6 pull-left">
-    		<h2>Popularity over time</h2>
-    		<div class="well" id="main-stats" style="height:300px;">
-    		</div>
-    	</div>
-    	<div class="span6 pull-left">
-    		<h2>Commits activity</h2>
-    		<div class="well " id="commits-stats" style="height:300px;">
-    		</div>
-    	</div>
-    	<div class="clearfix"></div>
-    	<div class="span12">
-    		<h2>Pull requests activity</h2>
-    		<div class="well " id="pull-stats" style="height:400px;">
-    		</div>
-    	</div>
+        <div class="stats-container">	
+            <div class="span6 pull-left">
+        		<h2>Popularity over time</h2>
+        		<div class="well" id="main-stats" style="height:300px;">
+        		</div>
+        	</div>
+        	<div class="span6 pull-left">
+        		<h2>Commits activity</h2>
+        		<div class="well " id="commits-stats" style="height:300px;">
+        		</div>
+        	</div>
+        </div>
+        <div class="stats-container">	
+            <div class="span12">
+        		<h2>Pull requests activity</h2>
+        		<div class="well " id="pull-stats" style="height:400px;">
+        		</div>
+        	</div>
+        </div>    
     </div>
     <div class="well tab-pane" id="readme">
     <?=MarkdownExtra::defaultTransform($this->project->readme)?>

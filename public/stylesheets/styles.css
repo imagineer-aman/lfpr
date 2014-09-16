@@ -366,6 +366,7 @@ pointer-events: none;
 
 #project-data-panel {
   position: relative;
+  padding-left: 2.5em;
 }
 
 .pr_acceptance_rate {
